@@ -14,13 +14,13 @@ jobs:
       - uses: actions/checkout@v3
       - uses: iterative/setup-cml@v2
       - name: Install Packages
-      - run: make install
+        run: make install
       - name: Format
-      - run: make format
+        run: make format
       - name: Train
-      - run: make train
+        run: make train
       - name: Evaluation
         env:
           REPO_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - run: make eval
+        run: make eval
       

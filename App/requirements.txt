@@ -1,2 +1,5 @@
+ipykernel
+pandas
+matplotlib
 scikit-learn
 skops

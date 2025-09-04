@@ -1,5 +1,6 @@
 ipykernel
 pandas
+black
 matplotlib
 scikit-learn
 skops

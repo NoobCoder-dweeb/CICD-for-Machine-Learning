@@ -29,11 +29,11 @@ hf-login:
 	git pull origin update
 	git switch update
 	pip install -U "huggingface_hub[cli]"
-	huggingface-cli login --token $(HF) --add-to-git-credential
+	hf auth login --token $(HF) --add-to-git-credential
 
 push-hub:
-	huggingface-cli upload NoobCoder-dweeb/CICD-for-Machine-Learning ./App --repo-type=space --commit-message="Sync App Files"
-	huggingface-cli upload NoobCoder-dweeb/CICD-for-Machine-Learning ./Models /Models --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload NoobCoder-dweeb/CICD-for-Machine-Learning ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	hf upload exiler26/Drug-Classification ./App --repo-type=space --commit-message="Sync App Files"
+	hf upload exiler26/Drug-Classification ./Models /Models --repo-type=space --commit-message="Sync Model"
+	hf upload exiler26/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub

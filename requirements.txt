@@ -1,6 +1,7 @@
 ipykernel
 pandas
 black
+gradio
 matplotlib
 scikit-learn
 skops

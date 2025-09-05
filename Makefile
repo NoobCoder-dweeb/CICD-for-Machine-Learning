@@ -32,8 +32,8 @@ hf-login:
 	hf auth login --token $(HF) --add-to-git-credential
 
 push-hub:
-	hf upload NoobCoder-dweeb/CICD-for-Machine-Learning ./App --repo-type=space --commit-message="Sync App Files"
-	hf upload NoobCoder-dweeb/CICD-for-Machine-Learning ./Models /Models --repo-type=space --commit-message="Sync Model"
-	hf upload NoobCoder-dweeb/CICD-for-Machine-Learning ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	hf upload exiler26/Drug-Classification ./App --repo-type=space --commit-message="Sync App Files"
+	hf upload exiler26/Drug-Classification ./Models /Models --repo-type=space --commit-message="Sync Model"
+	hf upload exiler26/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub

@@ -3,9 +3,10 @@ import skops.io as sio
 import os
 
 def run():
-    path = os.path.dirname(os.path.dirname(__file__))
-    pipe_path = os.path.join(path, "Models/drug_pipeline.skops")
-    
+    # path = os.path.dirname(os.path.dirname(__file__))
+    # pipe_path = os.path.join(path, "Models/drug_pipeline.skops")
+    pipe_path = "./Models/drug_pipeline.skops"
+
     if not os.path.exists(pipe_path):
         print("No existing trained model to load..")
         return
